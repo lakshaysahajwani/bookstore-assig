@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <%- include('includes/nav.ejs') %>
+
+
+    <!-- About Section -->
+    <main class="max-w-6xl mx-auto px-6 py-12">
+
+        <!-- Page Heading -->
+        <div class="text-center mb-10">
+
+            <p class="text-blue-600 font-semibold uppercase tracking-wider text-sm">
+                About Us
+            </p>
+
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2">
+                Welcome to Our Bookstore
+            </h1>
+
+            <p class="text-gray-500 mt-4 text-lg">
+                A place where books inspire learning and growth.
+            </p>
+
+        </div>
+
+
+        <!-- Main Card -->
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-200
+                    overflow-hidden">
+
+            <div class="grid md:grid-cols-2">
+
+                <!-- Left Side -->
+                <div class="bg-gradient-to-br from-blue-600 to-indigo-700
+                            text-white p-10 md:p-14
+                            flex flex-col justify-center">
+
+                    <p class="text-blue-200 uppercase tracking-widest
+                              text-sm font-semibold mb-4">
+                        Our Story
+                    </p>
+
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        Books Open the Door to New Ideas
+                    </h2>
+
+                    <p class="text-blue-100 leading-8 text-lg">
+                        Our bookstore is made for students who love to learn,
+                        explore, and grow every day.
+                    </p>
+
+                    <div class="mt-8 flex gap-4">
+
+                        <div>
+                            <p class="text-3xl font-bold">📚</p>
+                            <p class="text-blue-100 text-sm mt-1">
+                                Learn
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="text-3xl font-bold">💡</p>
+                            <p class="text-blue-100 text-sm mt-1">
+                                Explore
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="text-3xl font-bold">🎯</p>
+                            <p class="text-blue-100 text-sm mt-1">
+                                Grow
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Right Side -->
+                <div class="p-10 md:p-14">
+
+                    <h2 class="text-2xl font-bold text-gray-900 mb-5">
+                        Why Choose Our Bookstore?
+                    </h2>
+
+                    <p class="text-gray-600 leading-8 text-lg">
+                        We believe books are not just pages—they are tools
+                        that open new ideas, improve thinking, and build
+                        confidence.
+                    </p>
+
+                    <p class="text-gray-600 leading-8 text-lg mt-5">
+                        From stories to knowledge books, every title helps
+                        students discover something important for their future.
+                    </p>
+
+                    <p class="text-gray-600 leading-8 text-lg mt-5">
+                        Whether you are preparing for exams, building a hobby,
+                        or simply looking for inspiration, our collection is
+                        here to support your journey.
+                    </p>
+
+
+                    <!-- Features -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+
+                        <div class="bg-blue-50 rounded-xl p-4">
+                            <p class="text-xl mb-1">📖</p>
+                            <h3 class="font-bold text-gray-900">
+                                Wide Collection
+                            </h3>
+                            <p class="text-sm text-gray-500 mt-1">
+                                Books for learning and enjoyment.
+                            </p>
+                        </div>
+
+                        <div class="bg-indigo-50 rounded-xl p-4">
+                            <p class="text-xl mb-1">🎓</p>
+                            <h3 class="font-bold text-gray-900">
+                                Student Friendly
+                            </h3>
+                            <p class="text-sm text-gray-500 mt-1">
+                                Useful books for every learner.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <%- include('includes/footer.ejs') %>
+
+</body>
+</html>
