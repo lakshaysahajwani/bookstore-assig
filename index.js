@@ -1,14 +1,24 @@
 const path = require("path");
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const mongoose = require('mongoose');
 const nodemailer = require('nodemailer');
 
 async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/bookstore');
+    const mongoURI = process.env.MONGO_URI;
+
+    if (!mongoURI) {
+        throw new Error("MONGO_URI environment variable is missing");
+    }
+
+    await mongoose.connect(mongoURI);
 }
+
+main()
+    .then(() => console.log("MongoDB Atlas Connected"))
+    .catch((err) => console.error("MongoDB connection failed:", err));
 
 main()
 .then(() => {console.log('DB Connected')})
