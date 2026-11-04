@@ -16,13 +16,7 @@ async function main() {
     await mongoose.connect(mongoURI);
 }
 
-main()
-    .then(() => console.log("MongoDB Atlas Connected"))
-    .catch((err) => console.error("MongoDB connection failed:", err));
 
-main()
-.then(() => {console.log('DB Connected')})
-.catch((err) => {console.log(err)});
 
 const bookSchema = new mongoose.Schema({
     name: String,
